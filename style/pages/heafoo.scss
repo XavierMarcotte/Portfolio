@@ -1,0 +1,45 @@
+body{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    header{
+        margin: 1em;
+        display: grid;
+        grid-template-columns: 20% 70% 10% ;
+        justify-content: space-around;
+        align-items: center;
+        h1{
+            font-size: 3.5em;
+            margin-left: 1em;
+        }
+        nav{
+            font-size: 1.5em;
+            display: flex;
+            justify-content: space-around;
+                a{
+                    cursor: pointer;
+                    padding-bottom: 0.5em;
+                    color: white;
+                    text-decoration: none;
+                }
+                a:hover{
+                    box-shadow: inset 0px -4px 0px orange;
+                    transition: 0.4s ease;
+                }
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            
+        }
+    }
+    footer {
+        background: black;
+        display: flex;
+        color: white;
+        height: 10vh;
+        
+    }
+}
