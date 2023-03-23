@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "/index.html",
+  "scripts": {
+    "start": "parcel",
+
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XavierMarcotte/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XavierMarcotte/Portfolio/issues"
+  },
+  "homepage": "https://github.com/XavierMarcotte/Portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
