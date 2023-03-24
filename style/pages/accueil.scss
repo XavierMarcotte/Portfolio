@@ -18,6 +18,11 @@
         padding: 1em;
         cursor: pointer;
         box-shadow: 4px -2px 25px 8px rgba(255,255,255,0.61);
+        transition: 1s ease;
         margin: 2em auto auto 10em;
+    }
+    button:hover{
+        box-shadow: 4px -2px 65px 8px orange;
+        transition: 1s ease;
     }
 }
