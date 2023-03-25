@@ -2,11 +2,13 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "/index.js",
   "source": "/index.html",
+  "type": "module",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "node index",
+    "build": "parcel build",
+    "dev": "node-dev index --clear --notify=false"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,12 @@
   "homepage": "https://github.com/XavierMarcotte/Portfolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "node-dev": "^8.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
   }
 }
