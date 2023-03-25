@@ -1,49 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Accueil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>Xavier Marcotte</h1>
-        <nav>
-            <a href="">Accueil</a>
-            <a href="">Projets Perso</a>
-            <a href="">Compétences</a>
-            <a href="">Apprentissage</a>
-            <a href="">Me contacter</a>
-        </nav>
-        <img src="./pdp.jpg" alt="Photo de profil de Xavier Marcotte">
-    </header>
+<%- include('partials/header')%>
 
     <main class="accueil">
         <h2>Présentation</h2>
         <p>Bienvenu à vous sur mon Portfolio! Je m'appelle Xavier et je suis en formation de développement web et accessibilité. Vous trouverez sur ce site principalement mes créations, qu'elles soient de petit projet ou de plus gros. Elles seront directement reliées à mon github personnel pour avoir un accès au code que j'ai écrit. Ces créations peuvent être en lien avec ma formation, issues d'exercices ou de ma propre créativité. Elles ont principalement pour but de m'exercer dans un langage, d'essayer de nouvelles fonctionnalités ou de centraliser plusieurs méthodes sur un projet. Je vous souhaite une bonne découverte.</p>
-        <button>Accèdez à mes projets</button>
+        <button id="project">Accèdez à mes projets</button>
         
     </main>
-
-    <footer>
-        <a class="link" href="">Politique de confidentialité</a>
-        <a class="link" href="">Condition d'utilisation</a>
-        <div class="reseaux">
-            <div class="git">
-                <i class='fab fa-github-square'></i>
-                <a href="">GitHub</a>
-            </div>
-            <div class="linkedin">
-                 <i class='fab fa-linkedin-in'></i>
-                 <a href="">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    <script>
+        const button = document.querySelector('#project')
+        button.addEventListener('click' ,() => {
+            window.location.href = '/projets';
+        })
+        </script>
+<%- include('partials/footer')%>
