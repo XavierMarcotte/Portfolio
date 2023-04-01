@@ -1,4 +1,8 @@
-.accueil {
+html{
+
+}
+
+main {
   margin: 5em;
 }
 
@@ -111,5 +115,27 @@ body footer .reseaux div a:hover {
   transition: all .4s;
   box-shadow: inset 0 -4px orange;
 }
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}  
+article{
+  margin: 1em;
+  padding: 1.5em;
+  border: white 1px solid;
+  border-radius: 30px;
+}
+article img {
+  margin-left: 1.5rem;
+  width: 150px;
+  height: 150px;
+}
+article h3{
+  padding-left: 3rem;
+}
+
+
+
 
 /*# sourceMappingURL=index.c7ac86c6.css.map */
